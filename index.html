@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantamorfosis</title>
+    <link rel="icon" href="fotos/REAL BANNER.jpg" type="image/jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            height: 80px; /* Aumenta el tamaño del logo */
+            width: auto;
+            vertical-align: middle;
+        }
+        header h1 {
+            display: inline-block;
+            margin: 0;
+            font-size: 2.5rem;
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+        .banner {
+            background-image: url('file-in59MKaFxJsOq6CkNX3GAv2B.png'); /* Imagen de fondo del banner */
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Aumentar la altura del banner */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* Mueve el texto hacia abajo */
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .banner h2 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .product-row {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .product {
+            text-align: center;
+            width: 30%;
+        }
+        .product img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .product p {
+            margin: 5px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+        .product .price {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        .product .delivery {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+        .product .buy-button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #e74c3c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product .buy-button:hover {
+            background-color: #c0392b;
+        }
+        .create-character-button {
+            display: block;
+            margin: 40px auto;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .create-character-button:hover {
+            background-color: #2980b9;
+        }
+        .sale-banner {
+            background-color: yellow;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .sale-banner p {
+            display: inline-block;
+            font-size: 2rem;
+            color: #000;
+            animation: scrollText 10s linear infinite;
+        }
+        @keyframes scrollText {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="fotos/Logo.jpg" alt="Fantamorfosis">
+    <h1>Fantamorfosis</h1>
+</header>
+
+<div class="banner">
+    <div>
+        <background-size: cover-image> <img src="fotos/banner 2.0.jpg"></background-image>
+        <h2>¨Donde tu fantasía cobra vida¨</h2>
+    </div>
+</div>
+    
+<!-- Fila 1 -->
+<div class="product-row">
+    <div class="product">
+        <img src="fotos/Superhéroe.jpg" alt="Superhéroe.jpg">
+        <h3>Disfraz de Superhéroe</h3>
+        <p>Ideal para niños y adultos.</p>
+        <p class="price">S/.49.99</p>
+        <label for="quantity1">Cantidad:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+    
+    <div class="product">
+        <img src="fotos/Disfraz de Encantos.jpg" alt="Disfraz de Encantos.jpg">
+        <h3>Disfraz de Encantos</h3>
+        <p>Perfecto para fans de la película.</p>
+        <p class="price">S/.39.99</p>
+        <label for="quantity2">Cantidad:</label>
+        <input type="number" id="quantity2" name="quantity2" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+
+    <div class="product">
+        <img src="fotos/Disfraz de Pirata.jpg" alt="Disfraz de Pirata.jpg">
+        <h3>Disfraz de Pirata</h3>
+        <p>¡Perfecto para aventuras épicas!</p>
+        <p class="price">S/.44.99</p>
+        <label for="quantity3">Cantidad:</label>
+        <input type="number" id="quantity3" name="quantity3" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+</div>
+
+<!-- Fila 2 -->
+<div class="product-row">
+    <div class="product">
+        <img src="fotos/Disfraz de Zombir.jpg" alt="Disfraz de Zombir.jpg">
+        <h3>Disfraz de Zombir</h3>
+        <p>Perfecto para Halloween.</p>
+        <p class="price">S/.29.99</p>
+        <label for="quantity4">Cantidad:</label>
+        <input type="number" id="quantity4" name="quantity4" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+    
+    <div class="product">
+        <img src="fotos/Disfras de Bruja.jpg" alt="Disfras de Bruja.jpg">
+        <h3>Disfras de Bruja</h3>
+        <p>Incluye sombrero y capa.</p>
+        <p class="price">S/.34.99</p>
+        <label for="quantity5">Cantidad:</label>
+        <input type="number" id="quantity5" name="quantity5" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+
+    <div class="product">
+        <img src="fotos/Princesa Blancanieves.jpg" alt="Princesa Blancanieves.jpg">
+        <h3>Princesa Blancanieves</h3>
+        <p>Clásico e icónico disfraz.</p>
+        <p class="price">S/.39.99</p>
+        <label for="quantity6">Cantidad:</label>
+        <input type="number" id="quantity6" name="quantity6" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="product-row">
+    <div class="product">
+        <img src="fotos/Princesa Sofia.jpg" alt="Princesa Sofia.jpg">
+        <h3>Princesa Sofia</h3>
+        <p>Perfecto para las más pequeñas.</p>
+        <p class="price">S/.34.99</p>
+        <label for="quantity7">Cantidad:</label>
+        <input type="number" id="quantity7" name="quantity7" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+    
+    <div class="product">
+        <img src="fotos/Superhéroe Thor.jpg" alt="Superhéroe Thor.jpg">
+        <h3>Superhéroe Thor</h3>
+        <p>¡Para los más valientes!</p>
+        <p class="price">S/.49.99</p>
+        <label for="quantity8">Cantidad:</label>
+        <input type="number" id="quantity8" name="quantity8" min="1" max="10" value="1">
+        <p class="delivery">Entrega en 3-5 días hábiles</p>
+        <button class="buy-button">Comprar Ahora</button>
+    </div>
+</div>
+
+<!-- Botón para Crear Personaje y Estilo -->
+<a href="#" class="create-character-button">Crear tu Propio Personaje y Estilo</a>
+
+<div class="sale-banner">
+    <p>"¡No dejes pasar esta oportunidad! Obtén un 30% de descuento en tu primera compra. ¡Haz tu pedido ahora y transforma tu imaginación en realidad con Fantamorfosis!" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "¡No dejes pasar esta oportunidad! Obtén un 30% de descuento en tu primera compra. ¡Haz tu pedido ahora y transforma tu imaginación en realidad con Fantamorfosis!"</p>
+</div>
+
+</body>
+</html>
